@@ -1,0 +1,316 @@
+---
+layout: default
+title: Professional Chicago Movers | Fairplay Moving
+description: Chicago's most trusted moving company. Residential & commercial moving, packing services, local & long-distance. Get your free quote today!
+---
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="/resources/hero-truck.jpg" alt="Fairplay Moving Truck" class="w-full h-full object-cover">
+        <div class="absolute inset-0 hero-bg"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+        <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <span id="typed-text"></span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 font-light leading-relaxed">
+            Chicago's most trusted moving company. Professional, reliable, and affordable moving services for homes and businesses.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <button onclick="openQuoteModal()" class="btn-accent px-8 py-4 rounded-lg font-accent font-semibold text-lg">
+                Get Free Quote
+            </button>
+            <a href="tel:{{ site.phone }}" class="btn-primary px-8 py-4 rounded-lg font-accent font-semibold text-lg">
+                Call Now: {{ site.phone }}
+            </a>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="trust-item">
+                <div class="text-4xl font-bold mb-2 counter" data-target="2500">0</div>
+                <p class="text-lg">Moves Completed</p>
+            </div>
+            <div class="trust-item">
+                <div class="text-4xl font-bold mb-2 counter" data-target="98">0</div>
+                <p class="text-lg">% Customer Satisfaction</p>
+            </div>
+            <div class="trust-item">
+                <div class="text-4xl font-bold mb-2 counter" data-target="15">0</div>
+                <p class="text-lg">Years Experience</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6" data-splitting>
+                Our Moving Services
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We offer comprehensive moving solutions tailored to your needs. From local residential moves to large commercial relocations, we've got you covered.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Residential Moving -->
+            <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                <div class="service-icon mb-6">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-primary mb-4">Residential Moving</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Professional home moving services for apartments, condos, and houses of all sizes. We handle your belongings with care and precision.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Apartments & Houses
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Furniture Protection
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Same-Day Service
+                    </li>
+                </ul>
+                <a href="/services/residential/" class="btn-primary px-6 py-3 rounded-lg font-accent font-semibold inline-block">
+                    Learn More
+                </a>
+            </div>
+            
+            <!-- Commercial Moving -->
+            <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                <div class="service-icon mb-6">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm3 5a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-primary mb-4">Commercial Moving</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Efficient office and business relocations with minimal downtime. We understand the importance of keeping your business running smoothly.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Office Relocations
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Equipment Moving
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Weekend Moves
+                    </li>
+                </ul>
+                <a href="/services/commercial/" class="btn-primary px-6 py-3 rounded-lg font-accent font-semibold inline-block">
+                    Learn More
+                </a>
+            </div>
+            
+            <!-- Packing Services -->
+            <div class="card-hover bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                <div class="service-icon mb-6">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-primary mb-4">Packing & Unpacking</h3>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Professional packing services to protect your valuables. We use quality materials and expert techniques to ensure everything arrives safely.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Quality Materials
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Fragile Items
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Unpacking Service
+                    </li>
+                </ul>
+                <a href="/services/packing/" class="btn-primary px-6 py-3 rounded-lg font-accent font-semibold inline-block">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6" data-splitting>
+                Why Choose Fairplay Moving?
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We're not just movers – we're your moving partners. Here's why Chicago trusts Fairplay Moving.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-bold text-primary mb-4">Licensed & Insured</h3>
+                <p class="text-gray-600">Fully licensed and insured moving company with professional credentials.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-bold text-primary mb-4">No Hidden Fees</h3>
+                <p class="text-gray-600">Transparent pricing with no surprise charges. What we quote is what you pay.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-bold text-primary mb-4">On-Time Service</h3>
+                <p class="text-gray-600">We value your time and always arrive when promised. Punctuality is our priority.</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-display text-xl font-bold text-primary mb-4">Expert Team</h3>
+                <p class="text-gray-600">Professional, trained movers who handle your belongings with care and expertise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Areas -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6" data-splitting>
+                Serving Chicago & Suburbs
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                We provide moving services throughout the Chicago metropolitan area and surrounding suburbs.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {% for area in site.service_areas %}
+            <div class="bg-gray-50 p-6 rounded-xl text-center hover:bg-primary hover:text-white transition-all duration-300">
+                <h3 class="font-accent font-semibold text-lg">{{ area }}</h3>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-12">
+            <div class="bg-gray-50 p-8 rounded-2xl inline-block">
+                <h3 class="font-display text-2xl font-bold text-primary mb-4">Chicago Metropolitan Area</h3>
+                <p class="text-gray-600 mb-6">
+                    From downtown Chicago to the surrounding suburbs, we cover all major areas including North Side, South Side, West Side, and Northwest Indiana.
+                </p>
+                <button onclick="openQuoteModal()" class="btn-accent px-8 py-3 rounded-lg font-accent font-semibold">
+                    Check Your Area
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-20 bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
+            Ready to Move?
+        </h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
+            Get your free moving quote today. Our team is ready to make your move stress-free and efficient.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button onclick="openQuoteModal()" class="btn-accent px-12 py-4 rounded-lg font-accent font-semibold text-xl">
+                Get Free Quote
+            </button>
+            <a href="tel:{{ site.phone }}" class="bg-white text-primary px-12 py-4 rounded-lg font-accent font-semibold text-xl hover:bg-gray-100 transition-colors">
+                Call: {{ site.phone }}
+            </a>
+        </div>
+        
+        <p class="text-lg mt-6 text-blue-200">
+            Available 7 days a week | Emergency moving services available
+        </p>
+    </div>
+</section>
+
+<script>
+    // Initialize typed text effect
+    document.addEventListener('DOMContentLoaded', function() {
+        new Typed('#typed-text', {
+            strings: [
+                'Move with Confidence',
+                'Chicago\'s Trusted Movers',
+                'Professional Moving Services'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+    });
+</script>

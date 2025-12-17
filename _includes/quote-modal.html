@@ -1,0 +1,139 @@
+<!-- Quote Modal -->
+<div id="quoteModal" class="fixed inset-0 z-50 hidden">
+    <div class="modal-backdrop fixed inset-0" onclick="closeQuoteModal()"></div>
+    
+    <div class="flex items-center justify-center min-h-screen p-4">
+        <div class="modal-content bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                <h2 class="font-display text-2xl font-bold text-primary">Get Your Free Moving Quote</h2>
+                <button onclick="closeQuoteModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6">
+                <form id="quoteForm" class="space-y-6">
+                    <!-- Move Date -->
+                    <div>
+                        <label for="moveDate" class="block text-sm font-semibold text-gray-700 mb-2">Move Date *</label>
+                        <input type="date" id="moveDate" name="moveDate" required 
+                               class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                    </div>
+                    
+                    <!-- Move Size -->
+                    <div>
+                        <label for="moveSize" class="block text-sm font-semibold text-gray-700 mb-2">Move Size *</label>
+                        <select id="moveSize" name="moveSize" required 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                            <option value="">Select move size</option>
+                            <option value="studio">Studio Apartment</option>
+                            <option value="1-bedroom">1 Bedroom Apartment</option>
+                            <option value="2-bedroom">2 Bedroom Apartment</option>
+                            <option value="3-bedroom">3 Bedroom Apartment</option>
+                            <option value="4-bedroom">4+ Bedroom Apartment</option>
+                            <option value="small-house">Small House (1-2 bedrooms)</option>
+                            <option value="medium-house">Medium House (3-4 bedrooms)</option>
+                            <option value="large-house">Large House (5+ bedrooms)</option>
+                            <option value="storage-5x5">Storage Unit (5x5)</option>
+                            <option value="storage-5x10">Storage Unit (5x10)</option>
+                            <option value="storage-10x10">Storage Unit (10x10)</option>
+                            <option value="storage-10x15">Storage Unit (10x15)</option>
+                            <option value="storage-10x20">Storage Unit (10x20)</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="fullName" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="your@email.com">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required 
+                               class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                               placeholder="(312) 555-0123">
+                    </div>
+                    
+                    <!-- Location Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="fromZip" class="block text-sm font-semibold text-gray-700 mb-2">From ZIP Code *</label>
+                            <input type="text" id="fromZip" name="fromZip" required pattern="[0-9]{5}" 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="60601">
+                        </div>
+                        <div>
+                            <label for="toZip" class="block text-sm font-semibold text-gray-700 mb-2">To ZIP Code *</label>
+                            <input type="text" id="toZip" name="toZip" required pattern="[0-9]{5}" 
+                                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                   placeholder="60602">
+                        </div>
+                    </div>
+                    
+                    <!-- How did you hear about us -->
+                    <div>
+                        <label for="referral" class="block text-sm font-semibold text-gray-700 mb-2">How did you hear about us?</label>
+                        <select id="referral" name="referral" 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                            <option value="">Select an option</option>
+                            <option value="google">Google Search</option>
+                            <option value="yelp">Yelp</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="friend">Friend/Family</option>
+                            <option value="realtor">Realtor</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Additional Comments -->
+                    <div>
+                        <label for="comments" class="block text-sm font-semibold text-gray-700 mb-2">Additional Comments</label>
+                        <textarea id="comments" name="comments" rows="3" 
+                                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none"
+                                  placeholder="Any special requirements or items?"></textarea>
+                    </div>
+                    
+                    <!-- Captcha -->
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <span id="captchaQuestion" class="text-lg font-semibold text-gray-700 mr-4">5 + 3 = ?</span>
+                                <input type="number" id="captchaInput" required 
+                                       class="form-input w-20 px-3 py-2 border border-gray-300 rounded focus:outline-none"
+                                       placeholder="Answer">
+                                <input type="hidden" id="captchaAnswer" value="8">
+                            </div>
+                            <button type="button" onclick="generateCaptcha()" 
+                                    class="text-sm text-primary hover:text-accent transition-colors">
+                                New Question
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="button" id="submitBtn" onclick="submitQuoteForm()" 
+                                class="btn-accent w-full md:w-auto px-12 py-4 rounded-lg font-accent font-semibold text-lg">
+                            Get Free Quote
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
